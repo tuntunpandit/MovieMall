@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MainComponent } from './components/main/main.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { TvSeriesComponent } from './components/tv-series/tv-series.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CoreModule } from '../core/core.module';
 import { WrapperComponent } from './components/wrapper/wrapper.component';
+import { SharedModule } from '../shared/shared.module';
+import { HomeComponent } from './components/home/home.component';
 
 const featureRutes: Routes = [
   {
@@ -14,7 +15,7 @@ const featureRutes: Routes = [
     children: [
       {
         path: "",
-        component: MainComponent,
+        component: HomeComponent,
       },
       {
         path: "tv-shows",
@@ -35,14 +36,15 @@ const featureRutes: Routes = [
 @NgModule({
   declarations: [
     WrapperComponent,
-    MainComponent,
     MoviesComponent,
-    TvSeriesComponent
+    TvSeriesComponent,
+    HomeComponent,
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(featureRutes),
-    CoreModule
+    CoreModule,
+    SharedModule
   ]
 })
 export class FeaturesModule { }

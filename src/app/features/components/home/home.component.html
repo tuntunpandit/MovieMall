@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  <section class="search mt-4">
+    <app-search [totalMovies]="(trendingMovies$ | async)?.length" (searchTerm)="searchMovieList($event)"></app-search>
+  </section>
+  <section class="lists mt-4">
+    <app-slide-show [movieList]="trendingMovies$ | async"></app-slide-show>
+  </section>
+</div>
