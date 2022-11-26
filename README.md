@@ -1,6 +1,6 @@
 # MovieMall
 <div>
-    <img src="src/assets/img/logo.png" width="90%" title="logo">
+    <img src="src/assets/img/logo.png" width="90%" height="100px" title="logo">
 </div>
 # Follow these steps to run this project in localhost
 
@@ -9,7 +9,7 @@ Open your terminal and type these:
 2. `npm install`
 3. `ng serve -o`
 
-## Live Demo : <a href="#">Click Here!</a>
+## Live Demo : <a href="https://movie-mall.vercel.app/">Click Here!</a>
 # Screeshots
 
 1. **Desktop View**
