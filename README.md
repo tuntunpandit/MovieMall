@@ -1,5 +1,6 @@
-# MovieMall
+
 <div>
+  # MovieMall
     <img src="src/assets/img/logo.png" width="90%" height="100px" title="logo">
 </div>
 # Follow these steps to run this project in localhost
