@@ -1,12 +1,11 @@
 <div class="slideshow">
   <div class="row card-deck">
-    <div class="col-md-2 col-4" *ngFor="let movie of movieList">
-      <div class="card">
+    <div class="col-lg-3 col-md-4 col-6" *ngFor="let movie of movieList">
+      <div class="card movie-card mb-3">
         <img
           class="card-img-top"
           [src]="movie.image"
           alt="Card image cap"
-          height="200px"
           width="300px"
         />
         <div class="card-body">

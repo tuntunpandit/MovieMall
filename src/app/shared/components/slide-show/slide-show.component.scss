@@ -1,0 +1,14 @@
+.movie-card {
+    height: 400px;
+    img {
+        height: 75%;
+    }
+    .card-body {
+        height: 25%;
+    }
+    .card-title {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
